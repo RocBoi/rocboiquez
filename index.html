@@ -15,15 +15,15 @@
 body {
     font-family: "Poppins", Arial, sans-serif;
     color: #ffffff;
-    background-color: #050007;
     overflow-x: hidden;
+    background-color: #050007;
 }
 
 /* =====================
-   HERO SECTION
+   HERO SECTION WITH BACKGROUND
    ===================== */
 .hero {
-    min-height: 100vh;
+    min-height: 90vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ body {
             rgba(5, 0, 7, 0.75),
             rgba(5, 0, 7, 0.92)
         ),
-        url("rocboiquez/Screenshot_20260122-193341.png") center / cover no-repeat;
+        url("rocboiquez/Screenshot_20260122-193341.png") center/cover no-repeat;
 }
 
 .hero-content {
@@ -60,10 +60,10 @@ body {
 }
 
 /* =====================
-   ABOUT SECTION
+   ABOUT / ARTIST SECTION
    ===================== */
 .about {
-    padding: 90px 20px;
+    padding: 80px 20px;
     max-width: 1000px;
     margin: auto;
     text-align: left;
@@ -106,6 +106,18 @@ body {
     margin-bottom: 40px;
     font-size: 1.15rem;
     opacity: 0.85;
+}
+
+/* =====================
+   PROMO IMAGE
+   ===================== */
+.promo-image {
+    max-width: 450px;
+    width: 90%;
+    margin: 25px auto 45px auto;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(155, 0, 255, 0.35);
 }
 
 /* =====================
@@ -163,8 +175,8 @@ footer {
     <div class="hero-content">
         <h1>RocBoi Quez</h1>
         <p>
-            An underground Atlanta hip-hop legend, RocBoi Quez has been crafting raw, authentic southern music since his early days on the streets of Atlanta. 
-            Known for his unapologetic storytelling, innovative flows, and dedication to the culture, he has become a voice for the city’s next generation of hip-hop.
+            An underground Atlanta hip-hop legend, RocBoi Quez has been crafting raw, authentic southern music since his early days in the streets of Atlanta. 
+            Known for unapologetic storytelling and innovative flows, he has become a voice for the city’s next generation of hip-hop.
         </p>
         <p>
             From independent releases to high-quality collaborations, RocBoi Quez combines classic Atlanta grit with modern soundscapes, earning respect in the underground and beyond.
@@ -176,23 +188,26 @@ footer {
 <section class="about">
     <h2>The Purple Edition</h2>
     <p>
-        <em>The Purple Edition</em> is a masterfully crafted chopped-not-slopped experience, blending smooth southern beats with hard-hitting lyricism.  
-        This album highlights RocBoi Quez’s versatility, his deep connection to Atlanta’s musical roots, and his ability to push the boundaries of contemporary hip-hop.
+        <em>The Purple Edition</em> is a chopped-not-slopped album experience, blending smooth southern beats with hard-hitting lyricism.  
+        It highlights RocBoi Quez’s versatility, his deep connection to Atlanta’s musical roots, and his ability to push the boundaries of contemporary hip-hop.
     </p>
     <p>
         With subtle transitions, signature flows, and immersive production, <em>The Purple Edition</em> invites listeners on a journey through the heart of underground Atlanta.
     </p>
 </section>
 
-<!-- ALBUM LINKS -->
+<!-- ALBUM SECTION WITH PROMO IMAGE -->
 <section class="album">
+    <!-- Promo Image -->
+    <img src="assets/images/purplepromo.png" alt="The Purple Edition Promo" class="promo-image">
+
     <div class="links">
         <a href="https://tidal.com/browse/album/398959455?u" target="_blank" rel="noopener">Tidal</a>
         <a href="https://music.youtube.com/playlist?list=OLAK5uy_lb25gnTC8TBrEfRMuciJG99tvsWbE5cic&si=D99ZBDGBUjk6OBMu" target="_blank" rel="noopener">YouTube Music</a>
         <a href="https://music.amazon.com/albums/B0DMS5BNM6" target="_blank" rel="noopener">Amazon Music</a>
     </div>
 
-    <!-- NEW YouTube Playlist Embed with autoplay -->
+    <!-- YouTube Playlist Embed with autoplay -->
     <iframe 
         src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_nunl9vegkQiznnt-ZLSJPAG3_ZkPcA48Y&autoplay=1&mute=1" 
         allow="autoplay; encrypted-media" 

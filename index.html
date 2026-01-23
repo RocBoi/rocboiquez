@@ -20,7 +20,7 @@ body {
 }
 
 /* =====================
-   HERO SECTION
+   HERO SECTION (No photo)
    ===================== */
 .hero {
     min-height: 100vh;
@@ -30,26 +30,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 40px 20px;
-    background:
-        linear-gradient(
-            rgba(5, 0, 7, 0.78),
-            rgba(5, 0, 7, 0.92)
-        ),
-        url("https://raw.githubusercontent.com/RocBoi/rocboiquez/2b6f25813a15653d95aca51a6a938c5780d57543/Screenshot_20260122-193341.png")
-        center / cover no-repeat;
-}
-
-/* cinematic vignette */
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(
-        circle at center,
-        rgba(140, 0, 255, 0.18),
-        rgba(0, 0, 0, 0.88)
-    );
-    z-index: 1;
+    background: linear-gradient(180deg, #12001f 0%, #050007 100%);
 }
 
 .hero-content {
@@ -63,13 +44,14 @@ body {
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 24px;
-    text-shadow: 0 0 35px rgba(155, 0, 255, 0.65);
+    color: #b86bff;
+    text-shadow: 0 0 25px rgba(155, 0, 255, 0.6);
 }
 
 .hero p {
     font-size: clamp(1.1rem, 2.6vw, 1.45rem);
     line-height: 1.9;
-    opacity: 0.96;
+    opacity: 0.95;
 }
 
 /* =====================

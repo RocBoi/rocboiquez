@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RocBoi Quez | The Purple Edition</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+        background: #070707;
+        color: #ffffff;
+        overflow-x: hidden;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        min-height: 100vh;
+        background: linear-gradient(180deg, #12001f 0%, #050007 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        max-width: 900px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3rem, 7vw, 5.5rem);
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .hero p {
+        font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+        line-height: 1.8;
+        opacity: 0.9;
+    }
+
+    /* ALBUM SECTION */
+    .album {
+        padding: 80px 20px;
+        max-width: 1100px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .album h2 {
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+        color: #b86bff;
+        letter-spacing: 2px;
+    }
+
+    .album span {
+        display: block;
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+        opacity: 0.8;
+    }
+
+    /* LINKS */
+    .links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-bottom: 40px;
+    }
+
+    .links a {
+        text-decoration: none;
+        padding: 14px 30px;
+        border-radius: 40px;
+        background: #6d00c7;
+        color: #fff;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .links a:hover {
+        background: #9b00ff;
+        transform: translateY(-2px);
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 900px;
+        height: 380px;
+        border-radius: 16px;
+        border: none;
+        margin-top: 20px;
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        font-size: 0.85rem;
+        opacity: 0.6;
+        border-top: 1px solid rgba(255,255,255,0.05);
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>RocBoi Quez</h1>
+        <p>
+            A certified underground Atlanta legend.
+            Forged through real pressure, real loss, and real hustle.
+            RocBoi Quez delivers uncut southern hip-hop rooted in truth,
+            loyalty, and survival — music that speaks for the streets
+            without asking for permission.
+        </p>
+    </div>
+</section>
+
+<!-- ALBUM -->
+<section class="album">
+    <h2>The Purple Edition</h2>
+    <span>A Chopped Not Slopped Album Experience</span>
+
+    <div class="links">
+        <a href="https://tidal.com/browse/album/398959455?u" target="_blank">Tidal</a>
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_lb25gnTC8TBrEfRMuciJG99tvsWbE5cic&si=D99ZBDGBUjk6OBMu" target="_blank">YouTube Music</a>
+        <a href="https://music.amazon.com/albums/B0DMS5BNM6" target="_blank">Amazon Music</a>
+    </div>
+
+    <iframe 
+        src="https://music.youtube.com/embed?list=OLAK5uy_lb25gnTC8TBrEfRMuciJG99tvsWbE5cic"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+    </iframe>
+</section>
+
+<footer>
+    © 2026 RocBoi Quez • Underground Atlanta Hip-Hop
+</footer>
+
+</body>
+</html>

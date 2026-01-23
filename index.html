@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>RocBoi Quez | The Purple Edition</title>
 
 <style>
     * {
-        box-sizing: border-box;
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
 
     body {
-        font-family: "Poppins", sans-serif;
-        background: #070707;
+        font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        background: #050007;
         color: #ffffff;
         overflow-x: hidden;
     }
 
-    /* HERO SECTION */
+    /* =====================
+       HERO SECTION
+       ===================== */
     .hero {
         min-height: 100vh;
-        background: linear-gradient(180deg, #12001f 0%, #050007 100%);
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         padding: 40px 20px;
+        background:
+            linear-gradient(
+                rgba(5, 0, 7, 0.75),
+                rgba(5, 0, 7, 0.9)
+            ),
+            url("Screenshot_20260122-193341.png") center / cover no-repeat;
+    }
+
+    /* subtle cinematic edge darkening */
+    .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+            circle at center,
+            rgba(128, 0, 255, 0.18),
+            rgba(0, 0, 0, 0.85)
+        );
+        z-index: 1;
     }
 
     .hero-content {
+        position: relative;
+        z-index: 2;
         max-width: 900px;
     }
 
     .hero h1 {
         font-size: clamp(3rem, 7vw, 5.5rem);
-        letter-spacing: 3px;
-        margin-bottom: 20px;
+        letter-spacing: 4px;
         text-transform: uppercase;
+        margin-bottom: 20px;
+        text-shadow: 0 0 30px rgba(155, 0, 255, 0.6);
     }
 
     .hero p {
         font-size: clamp(1.1rem, 2.5vw, 1.4rem);
         line-height: 1.8;
-        opacity: 0.9;
+        opacity: 0.95;
     }
 
-    /* ALBUM SECTION */
+    /* =====================
+       ALBUM SECTION
+       ===================== */
     .album {
-        padding: 80px 20px;
+        padding: 90px 20px;
         max-width: 1100px;
         margin: auto;
         text-align: center;
@@ -60,37 +86,41 @@
         margin-bottom: 10px;
         color: #b86bff;
         letter-spacing: 2px;
+        text-transform: uppercase;
     }
 
     .album span {
         display: block;
-        margin-bottom: 30px;
+        margin-bottom: 35px;
         font-size: 1.1rem;
         opacity: 0.8;
     }
 
-    /* LINKS */
+    /* =====================
+       LINKS
+       ===================== */
     .links {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 18px;
-        margin-bottom: 40px;
+        margin-bottom: 45px;
     }
 
     .links a {
         text-decoration: none;
-        padding: 14px 30px;
+        padding: 14px 34px;
         border-radius: 40px;
-        background: #6d00c7;
-        color: #fff;
+        background: linear-gradient(135deg, #6d00c7, #9b00ff);
+        color: #ffffff;
         font-weight: 500;
+        letter-spacing: 0.5px;
         transition: all 0.3s ease;
     }
 
     .links a:hover {
-        background: #9b00ff;
-        transform: translateY(-2px);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(155, 0, 255, 0.35);
     }
 
     iframe {
@@ -99,15 +129,17 @@
         height: 380px;
         border-radius: 16px;
         border: none;
-        margin-top: 20px;
     }
 
+    /* =====================
+       FOOTER
+       ===================== */
     footer {
-        padding: 20px;
+        padding: 22px 15px;
         text-align: center;
         font-size: 0.85rem;
         opacity: 0.6;
-        border-top: 1px solid rgba(255,255,255,0.05);
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
 </style>
 </head>
@@ -120,10 +152,9 @@
         <h1>RocBoi Quez</h1>
         <p>
             A certified underground Atlanta legend.
-            Forged through real pressure, real loss, and real hustle.
-            RocBoi Quez delivers uncut southern hip-hop rooted in truth,
-            loyalty, and survival — music that speaks for the streets
-            without asking for permission.
+            Forged through real pressure, lived experience, and unwavering authenticity.
+            RocBoi Quez delivers uncut southern hip-hop rooted in truth, loyalty, and survival —
+            music that speaks for the streets without asking for permission.
         </p>
     </div>
 </section>
@@ -134,12 +165,12 @@
     <span>A Chopped Not Slopped Album Experience</span>
 
     <div class="links">
-        <a href="https://tidal.com/browse/album/398959455?u" target="_blank">Tidal</a>
-        <a href="https://music.youtube.com/playlist?list=OLAK5uy_lb25gnTC8TBrEfRMuciJG99tvsWbE5cic&si=D99ZBDGBUjk6OBMu" target="_blank">YouTube Music</a>
-        <a href="https://music.amazon.com/albums/B0DMS5BNM6" target="_blank">Amazon Music</a>
+        <a href="https://tidal.com/browse/album/398959455?u" target="_blank" rel="noopener">Tidal</a>
+        <a href="https://music.youtube.com/playlist?list=OLAK5uy_lb25gnTC8TBrEfRMuciJG99tvsWbE5cic&si=D99ZBDGBUjk6OBMu" target="_blank" rel="noopener">YouTube Music</a>
+        <a href="https://music.amazon.com/albums/B0DMS5BNM6" target="_blank" rel="noopener">Amazon Music</a>
     </div>
 
-    <iframe 
+    <iframe
         src="https://music.youtube.com/embed?list=OLAK5uy_lb25gnTC8TBrEfRMuciJG99tvsWbE5cic"
         allow="autoplay; encrypted-media"
         allowfullscreen>
@@ -151,4 +182,4 @@
 </footer>
 
 </body>
-</html>
+   </html>

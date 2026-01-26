@@ -92,7 +92,36 @@ h3 {
 .btn-secondary:hover {
   background-color: #1a1a1a;
 }
+.snippet-section {
+  max-width: 620px;
+  margin: 60px auto;
+  padding: 35px 25px;
+  background: #0b0b0b;
+  border: 1px solid #1e1e1e;
+  border-radius: 14px;
+  text-align: center;
+}
 
+.snippet-section h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.snippet-section audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.snippet-note {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #9a9a9a;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
 /* =========================
    MUSIC / PRODUCT CARDS
 ========================= */

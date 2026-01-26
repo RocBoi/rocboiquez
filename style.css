@@ -176,7 +176,21 @@ footer {
   font-size: 0.85rem;
   color: #7a7a7a;
 }
+.waveform-player {
+  margin-top: 25px;
+  text-align: center;
+}
 
+#waveform {
+  background: #0b0b0b;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.waveform-player .btn {
+  min-width: 180px;
+   }
 /* =========================
    BADGES & NOTICES
 ========================= */

@@ -63,26 +63,36 @@
       Enter your email to be notified when the download becomes available.
     </p>
 
-    <form>
-      <input
-        type="email"
-        placeholder="Email address"
-        required
-        style="
-          padding:14px;
-          width:100%;
-          max-width:400px;
-          border-radius:6px;
-          border:1px solid #333;
-          background:#0b0b0b;
-          color:#fff;
-          margin-top:10px;
-        "
-      >
-      <br><br>
-      <button class="btn btn-secondary" type="submit">
-        Notify Me
-      </button>
+    <form
+  action="https://formspree.io/f/xqeqeggk"
+  method="POST"
+>
+  <input
+    type="email"
+    name="email"
+    placeholder="Email address"
+    required
+    style="
+      padding:14px;
+      width:100%;
+      max-width:400px;
+      border-radius:6px;
+      border:1px solid #333;
+      background:#0b0b0b;
+      color:#fff;
+      margin-top:10px;
+    "
+  >
+
+  <!-- Hidden metadata -->
+  <input type="hidden" name="source" value="Get Out Your Feelings Landing Page">
+  <input type="hidden" name="_subject" value="Early Access Request — Chopped Not Slopped">
+
+  <br><br>
+
+  <button class="btn btn-secondary" type="submit">
+    Notify Me
+  </button>
     </form>
   </section>
 

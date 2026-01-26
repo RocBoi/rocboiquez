@@ -168,36 +168,7 @@ footer { padding:24px 15px; text-align:center; font-size:0.85rem; opacity:0.6; b
     <p class="notice">Digital download • Limited access • No streaming platforms</p>
   </div>
 </section>
-  <script>
-  const wavesurfer = WaveSurfer.create({
-    container: '#waveform',
-    waveColor: '#444',
-    progressColor: '#ffffff',
-    cursorColor: '#ffffff',
-    barWidth: 2,
-    barGap: 2,
-    height: 90,
-    responsive: true
-  });
 
-  wavesurfer.load(
-    'https://raw.githubusercontent.com/rocboiquez/rocboiquez/main/GetOutYourFeelings_30sec_Snippet_045-115.mp3'
-  );
-
-  const playBtn = document.getElementById('playPause');
-
-  playBtn.addEventListener('click', () => {
-    wavesurfer.playPause();
-  });
-
-  wavesurfer.on('play', () => {
-    playBtn.textContent = '❚❚ Pause Preview';
-  });
-
-  wavesurfer.on('pause', () => {
-    playBtn.textContent = '▶ Play Preview';
-  });
-    </script>
 
 <footer>© 2026 RocBoi Quez • Underground Atlanta Hip-Hop</footer>
 </body>

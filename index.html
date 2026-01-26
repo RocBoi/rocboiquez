@@ -157,10 +157,13 @@ footer { padding:24px 15px; text-align:center; font-size:0.85rem; opacity:0.6; b
     <img src="https://raw.githubusercontent.com/RocBoi/rocboiquez/main/IMG_0384.jpeg"
          alt="Get Out Your Feelings Cover Art" 
          style="width:100%;max-width:300px;margin:20px auto;display:block;border-radius:12px;box-shadow:0 8px 24px rgba(155,0,255,0.4);">
-    <audio controls>
-      <source src="https://raw.githubusercontent.com/RocBoi/rocboiquez/main/GetOutYourFeelings_30sec_Snippet_045-115.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+    <div class="waveform-player">
+  <div id="waveform"></div>
+
+  <button id="playPause" class="btn btn-secondary">
+    ▶ Play Preview
+  </button>
+    </div>
     <p>
       The exclusive unreleased single from <strong>RocBoi Quez</strong> — chopped not slopped and dripping with authentic Atlanta vibes. Only available digitally here.
     </p>
@@ -169,6 +172,36 @@ footer { padding:24px 15px; text-align:center; font-size:0.85rem; opacity:0.6; b
     <p class="notice">Digital download • Limited access • No streaming platforms</p>
   </div>
 </section>
+  <script>
+  const wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: '#444',
+    progressColor: '#ffffff',
+    cursorColor: '#ffffff',
+    barWidth: 2,
+    barGap: 2,
+    height: 90,
+    responsive: true
+  });
+
+  wavesurfer.load(
+    'https://raw.githubusercontent.com/rocboiquez/rocboiquez/main/GetOutYourFeelings_30sec_Snippet_045-115.mp3'
+  );
+
+  const playBtn = document.getElementById('playPause');
+
+  playBtn.addEventListener('click', () => {
+    wavesurfer.playPause();
+  });
+
+  wavesurfer.on('play', () => {
+    playBtn.textContent = '❚❚ Pause Preview';
+  });
+
+  wavesurfer.on('pause', () => {
+    playBtn.textContent = '▶ Play Preview';
+  });
+    </script>
 
 <footer>© 2026 RocBoi Quez • Underground Atlanta Hip-Hop</footer>
 </body>

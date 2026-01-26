@@ -61,6 +61,7 @@ body { font-family:"Poppins", Arial, sans-serif; background:#050007; color:#fff;
   z-index:2;
   pointer-events:none;
 }
+
 .hero .hero-content { position:relative; z-index:3; max-width:900px; animation:fadeInUp 1.8s ease forwards; opacity:0; }
 
 .hero h1 {
@@ -105,8 +106,8 @@ body { font-family:"Poppins", Arial, sans-serif; background:#050007; color:#fff;
 .links a:hover { transform:translateY(-3px); box-shadow:0 12px 32px rgba(155,0,255,0.6);}
 iframe { width:100%; max-width:900px; height:400px; border:none; border-radius:16px; box-shadow:0 8px 32px rgba(155,0,255,0.4); }
 
-/* CARD */
-.card { background:#111; border:1px solid #1f1f1f; border-radius:10px; padding:30px; margin:60px auto; max-width:620px; }
+/* CARD / DIGITAL RELEASE */
+.card { background:#111; border:1px solid #1f1f1f; border-radius:10px; padding:30px; margin:60px auto; max-width:620px; text-align:center; }
 .card h2 { color:#b86bff; margin-bottom:8px; }
 .card h3 { color:#9b9b9b; text-transform:uppercase; margin-bottom:12px; }
 .card p { color:#cfcfcf; margin-bottom:15px; }
@@ -114,9 +115,6 @@ iframe { width:100%; max-width:900px; height:400px; border:none; border-radius:1
 .badge { display:inline-block; padding:6px 12px; font-size:0.75rem; letter-spacing:1px; text-transform:uppercase; border:1px solid #3a3a3a; border-radius:20px; color:#bdbdbd; margin-bottom:15px; }
 .notice { font-size:0.9rem; color:#9a9a9a; }
 audio { width:100%; margin-top:15px; border-radius:10px; }
-
-/* FORM */
-input[type="email"] { padding:12px; width:100%; border-radius:6px; border:1px solid #333; background:#0b0b0b; color:#fff; margin-bottom:15px; }
 
 /* FOOTER */
 footer { padding:24px 15px; text-align:center; font-size:0.85rem; opacity:0.6; border-top:1px solid rgba(255,255,255,0.06); }
@@ -149,67 +147,29 @@ footer { padding:24px 15px; text-align:center; font-size:0.85rem; opacity:0.6; b
   </div>
   <iframe src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_nunl9vegkQiznnt-ZLSJPAG3_ZkPcA48Y&autoplay=0&mute=1" allowfullscreen></iframe>
 </section>
-  <section class="digital-release">
+
+<!-- DIGITAL RELEASE: GET OUT YOUR FEELINGS -->
+<section class="digital-release">
   <div class="container card">
     <span class="badge">Exclusive • Limited</span>
-
     <h2>Get Out Your Feelings</h2>
     <h3>Chopped Not Slopped</h3>
-
-    <!-- Cover Artwork -->
     <img src="https://raw.githubusercontent.com/RocBoi/rocboiquez/main/GetOutYourFeelingsCover.png" 
          alt="Get Out Your Feelings Cover Art" 
          style="width:100%;max-width:300px;margin:20px auto;display:block;border-radius:12px;box-shadow:0 8px 24px rgba(155,0,255,0.4);">
-
-    <!-- Audio Preview -->
     <audio controls>
       <source src="https://raw.githubusercontent.com/RocBoi/rocboiquez/main/GetOutYourFeelings_30sec_Snippet_045-115.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
-
     <p>
       The exclusive unreleased single from <strong>RocBoi Quez</strong> — chopped not slopped and dripping with authentic Atlanta vibes. Only available digitally here.
     </p>
-
     <div class="price">$3.99</div>
-
-    <a href="https://choppednotslopped.gumroad.com/l/bfwjeq" 
-       target="_blank" 
-       class="btn btn-primary">
-      Buy Now
-    </a>
-
-    <p class="notice">
-      Digital download • Limited access • No streaming platforms
-    </p>
+    <a href="https://choppednotslopped.gumroad.com/l/bfwjeq" target="_blank" class="btn btn-primary">Buy Now</a>
+    <p class="notice">Digital download • Limited access • No streaming platforms</p>
   </div>
-  </section>
-
-<!-- UNRELEASED SINGLE -->
-<div class="card" id="get-out-your-feelings">
-  <span class="badge">Unreleased • Exclusive</span>
-  <h2>Get Out Your Feelings</h2>
-  <h3>Chopped Not Slopped</h3>
-  <p>A private unreleased single from RocBoi Quez. Available exclusively here.</p>
-  <audio controls>
-    <source src="https://raw.githubusercontent.com/RocBoi/rocboiquez/main/GetOutYourFeelings_30sec_Snippet_045-115.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <div class="price">$3.99</div>
-  <a href="#notify" class="btn btn-primary">Get Notified When Available</a>
-  <p class="notice">Digital release • Limited access • No streaming platforms</p>
-</div>
-
-<!-- EARLY ACCESS -->
-<div class="card" id="notify">
-  <h2>Early Access</h2>
-  <p>Be notified when this unreleased single becomes available.</p>
-  <form>
-    <input type="email" placeholder="Email address" required>
-    <button class="btn btn-secondary" type="submit">Notify Me</button>
-  </form>
-</div>
+</section>
 
 <footer>© 2026 RocBoi Quez • Underground Atlanta Hip-Hop</footer>
 </body>
-</html>
+  </html>

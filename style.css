@@ -46,7 +46,18 @@ h3 {
   text-transform: uppercase;
   color: #9b9b9b;
 }
+.cover-art {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(155,0,255,0.4);
+}
 
+.digital-release {
+  padding: 80px 20px;
+}
 /* =========================
    HERO SECTION
 ========================= */

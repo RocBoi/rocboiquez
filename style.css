@@ -7,11 +7,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   background-color: #0b0b0b;
   color: #eaeaea;
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* =========================
@@ -26,7 +31,9 @@ body {
 /* =========================
    HEADINGS
 ========================= */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 600;
   letter-spacing: 0.5px;
 }
@@ -46,20 +53,9 @@ h3 {
   text-transform: uppercase;
   color: #9b9b9b;
 }
-.cover-art {
-  width: 100%;
-  max-width: 300px;
-  margin: 20px auto;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(155,0,255,0.4);
-}
 
-.digital-release {
-  padding: 80px 20px;
-}
 /* =========================
-   HERO SECTION
+   HERO / COVER
 ========================= */
 .hero {
   padding: 80px 0;
@@ -68,8 +64,21 @@ h3 {
 
 .hero p {
   max-width: 600px;
-  color: #bdbdbd;
   margin-top: 10px;
+  color: #bdbdbd;
+}
+
+.cover-art {
+  width: 100%;
+  max-width: 300px;
+  margin: 25px auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(155, 0, 255, 0.4);
+}
+
+.digital-release {
+  padding: 80px 20px;
 }
 
 /* =========================
@@ -80,10 +89,11 @@ h3 {
   margin-top: 20px;
   padding: 14px 32px;
   border-radius: 6px;
-  text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
+  text-decoration: none;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -98,6 +108,7 @@ h3 {
 .btn-secondary {
   border: 1px solid #3a3a3a;
   color: #eaeaea;
+  background: transparent;
 }
 
 .btn-secondary:hover {
@@ -105,7 +116,7 @@ h3 {
 }
 
 /* =========================
-   SNIPPET SECTION
+   SNIPPET / AUDIO SECTION
 ========================= */
 .snippet-section {
   max-width: 620px;
@@ -118,7 +129,6 @@ h3 {
 }
 
 .snippet-section h2 {
-  color: #ffffff;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -139,7 +149,27 @@ h3 {
 }
 
 /* =========================
-   MUSIC / PRODUCT CARDS
+   WAVEFORM PLAYER (SAFE)
+========================= */
+.waveform-player {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#waveform {
+  background: #0b0b0b;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #1e1e1e;
+}
+
+.waveform-player .btn {
+  min-width: 180px;
+}
+
+/* =========================
+   CARDS / CONTENT BLOCKS
 ========================= */
 .card {
   background-color: #111111;
@@ -165,44 +195,6 @@ h3 {
 }
 
 /* =========================
-   LINKS
-========================= */
-a {
-  color: #b68cff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-  border-top: 1px solid #1e1e1e;
-  margin-top: 80px;
-  padding: 30px 20px;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #7a7a7a;
-}
-.waveform-player {
-  margin-top: 25px;
-  text-align: center;
-}
-
-#waveform {
-  background: #0b0b0b;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 15px;
-}
-
-.waveform-player .btn {
-  min-width: 180px;
-   }
-/* =========================
    BADGES & NOTICES
 ========================= */
 .badge {
@@ -221,4 +213,45 @@ footer {
   margin-top: 15px;
   font-size: 0.9rem;
   color: #9a9a9a;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+  color: #b68cff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  margin-top: 80px;
+  padding: 30px 20px;
+  border-top: 1px solid #1e1e1e;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #7a7a7a;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
    }

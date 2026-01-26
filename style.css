@@ -1,0 +1,144 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #0b0b0b;
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #9b9b9b;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  padding: 80px 0;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.hero p {
+  max-width: 600px;
+  color: #bdbdbd;
+  margin-top: 10px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #6a0dad;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #520080;
+}
+
+.btn-secondary {
+  border: 1px solid #3a3a3a;
+  color: #eaeaea;
+}
+
+.btn-secondary:hover {
+  background-color: #1a1a1a;
+}
+
+/* =========================
+   MUSIC / PRODUCT CARDS
+========================= */
+.card {
+  background-color: #111111;
+  border: 1px solid #1f1f1f;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.card p {
+  color: #cfcfcf;
+  margin-top: 8px;
+}
+
+/* =========================
+   PRICE TAG
+========================= */
+.price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+  color: #b68cff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  border-top: 1px solid #1e1e1e;
+  margin-top: 80px;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #7a7a7a;
+}

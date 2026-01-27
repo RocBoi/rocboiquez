@@ -6,31 +6,29 @@
 
   <!-- PRIMARY SEO -->
   <title>RocBoi Quez – Chopped Not Slopped Hip Hop | DJ-Ready Indie Release $3.99</title>
-  <meta name="description" content="RocBoi Quez, Atlanta underground hip hop artist, presents DJ-ready chopped not slopped & chopped and screwed tracks. Perfect for DJs, indie radio, college stations & underground tastemakers. Instant digital download for $3.99. Featuring syrup nation & codeine culture vibes.">
-  <meta name="keywords" content="RocBoi Quez, chopped not slopped, chopped and screwed, Atlanta hip hop, underground hip hop, Southern rap, syrup nation, codeine music, D2C music, DJ-ready hip hop, indie radio, college radio, Houston rap, Dallas rap, Memphis rap, New Orleans rap, Southern US hip hop, Purple Drank culture, DJ intro music, new music release 2026, digital download, independent hip hop, Atlanta mixtape, Southern cities hip hop, DJ-friendly single, underground mixtape, chopped not slopped album, Southern rap digital, codeine rap tracks, Purple Drank hip hop, indie hip hop release, Southern beats">
-
+  <meta name="description" content="Atlanta hip hop artist RocBoi Quez presents DJ-ready chopped not slopped & chopped and screwed hip hop. Perfect for DJs, indie radio, college stations & underground tastemakers. Instant play. Instant download. $3.99.">
+  <meta name="keywords" content="RocBoi Quez, chopped not slopped, chopped and screwed, DJ hip hop, college radio hip hop, indie radio, Atlanta hip hop artist, DJ intro music, underground hip hop 2026, $3.99 music download, D2C music, syrup nation, codeine music, southern hip hop, Houston, Dallas, Memphis, Atlanta, Houston rap, Memphis rap, Houston syrup, chopped music, underground Atlanta music">
   <meta name="author" content="RocBoi Quez">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
   <link rel="canonical" href="https://www.rocboiquez.com/">
 
-  <!-- OPEN GRAPH (SOCIAL SHARING) -->
-  <meta property="og:type" content="music.album">
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
   <meta property="og:title" content="RocBoi Quez – Chopped Not Slopped Hip Hop">
-  <meta property="og:description" content="DJ-ready chopped not slopped & chopped and screwed hip hop by RocBoi Quez. Underground Atlanta vibes for DJs, indie radio, and tastemakers. $3.99 instant download.">
+  <meta property="og:description" content="DJ-ready chopped not slopped & chopped and screwed hip hop. Underground heat for DJs & radio. $3.99 digital download.">
   <meta property="og:url" content="https://www.rocboiquez.com">
-  <meta property="og:image" content="https://www.rocboiquez.com/assets/cover.jpg">
-  <meta property="og:site_name" content="RocBoi Quez">
-  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://raw.githubusercontent.com/RocBoi/rocboiquez/23d2e568c5260de5d61776da0bb1e0047751f1e2/IMG_0384.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- TWITTER CARD -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="RocBoi Quez – DJ-Ready Chopped Not Slopped Hip Hop">
-  <meta name="twitter:description" content="Perfect for DJs, indie radio & college stations. Instant $3.99 download. Featuring Atlanta underground hip hop, syrup nation & codeine vibes.">
-  <meta name="twitter:image" content="https://www.rocboiquez.com/assets/cover.jpg">
-  <meta name="twitter:site" content="@RocBoiQuez">
-  <meta name="twitter:creator" content="@RocBoiQuez">
+  <meta name="twitter:title" content="RocBoi Quez – Chopped Not Slopped Hip Hop">
+  <meta name="twitter:description" content="DJ-ready chopped not slopped & chopped and screwed hip hop. Underground heat for DJs & radio. $3.99 digital download.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/RocBoi/rocboiquez/23d2e568c5260de5d61776da0bb1e0047751f1e2/IMG_0384.jpeg">
 
-  <!-- STYLES (unchanged visual system) -->
+  <!-- STYLES (Hero BG + purple fade) -->
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:"Poppins",Arial,sans-serif;background:#050007;color:#fff;overflow-x:hidden}
@@ -39,8 +37,24 @@
     .btn-primary:hover{background:#520080}
     .btn-secondary{border:1px solid #3a3a3a;color:#eaeaea}
     .btn-secondary:hover{background:#1a1a1a}
-    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative}
-    .hero-content{max-width:900px}
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}
+    .hero-content{max-width:900px;position:relative;z-index:2}
+    .hero::before {
+      content:"";
+      position:absolute;
+      top:0; left:0; width:100%; height:100%;
+      background: url('https://raw.githubusercontent.com/RocBoi/rocboiquez/23d2e568c5260de5d61776da0bb1e0047751f1e2/IMG_0384.jpeg') center/cover no-repeat;
+      filter: grayscale(40%) brightness(70%) sepia(10%);
+      opacity:0;
+      animation: fadeBG 8s infinite alternate;
+      z-index:1;
+    }
+    @keyframes fadeBG {
+      0% {opacity:0.3;}
+      50% {opacity:0.6;}
+      100% {opacity:0.3;}
+    }
+
     .card{background:#111;border:1px solid #1f1f1f;border-radius:10px;padding:30px;max-width:620px;margin:60px auto;text-align:center}
     audio{width:100%;margin-top:15px;border-radius:10px}
     .price{font-size:1.4rem;font-weight:700;margin:15px 0}
@@ -48,7 +62,6 @@
     footer{text-align:center;font-size:.85rem;opacity:.6;padding:24px 15px;border-top:1px solid rgba(255,255,255,.06)}
     #waveform{margin-top:15px;background:#0b0b0b;border-radius:10px;padding:10px}
   </style>
-
 </head>
 
 <body>
@@ -61,44 +74,6 @@
   </div>
 </section>
 
-<style>
-/* HERO BACKGROUND ANIMATION */
-.hero {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: url('https://raw.githubusercontent.com/RocBoi/rocboiquez/f683d1e0822086e630009f564e0725a19f7187eb/unnamed.webp') center/cover no-repeat;
-  filter: grayscale(60%) brightness(70%) sepia(20%) hue-rotate(280deg);
-  opacity: 0;
-  animation: fadeBg 8s ease-in-out infinite alternate;
-  z-index: -1;
-}
-
-@keyframes fadeBg {
-  0% { opacity: 0.3; }
-  50% { opacity: 0.7; }
-  100% { opacity: 0.3; }
-}
-
-/* Keep text on top */
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-</style>
-
 <!-- DIGITAL RELEASE -->
 <section class="digital-release">
   <div class="card">
@@ -106,7 +81,7 @@
     <h2>Get Out Your Feelings</h2>
     <h3>Chopped Not Slopped</h3>
 
-    <!-- AUDIO (UNCHANGED AS REQUESTED) -->
+    <!-- AUDIO -->
     <audio id="audio-player" controls preload="none">
       <source src="https://raw.githubusercontent.com/RocBoi/rocboiquez/4d352f948618b215e0215bc877047da805caee63/GetOutYourFeelings_30sec_Snippet_045-115.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
@@ -144,17 +119,11 @@
   };
 </script>
 
-<!-- GA4 EVENTS (requires your GTM/gtag already installed) -->
+<!-- GA4 EVENTS -->
 <script>
-  audio.addEventListener('play', () => {
-    gtag('event','audio_play',{event_category:'Audio',event_label:'Get Out Your Feelings'});
-  });
-  audio.addEventListener('ended', () => {
-    gtag('event','audio_complete',{event_category:'Audio',event_label:'Get Out Your Feelings'});
-  });
-  document.getElementById('buyBtn').addEventListener('click', () => {
-    gtag('event','purchase_click',{event_category:'Conversion',value:3.99});
-  });
+  audio.addEventListener('play', () => { gtag('event','audio_play',{event_category:'Audio',event_label:'Get Out Your Feelings'}); });
+  audio.addEventListener('ended', () => { gtag('event','audio_complete',{event_category:'Audio',event_label:'Get Out Your Feelings'}); });
+  document.getElementById('buyBtn').addEventListener('click', () => { gtag('event','purchase_click',{event_category:'Conversion',value:3.99}); });
 </script>
 
 <!-- STRUCTURED DATA (JSON-LD) -->
@@ -164,16 +133,11 @@
   "@type":"MusicRecording",
   "name":"Get Out Your Feelings (Chopped Not Slopped)",
   "byArtist":{"@type":"MusicGroup","name":"RocBoi Quez"},
-  "genre":["Hip Hop","Chopped Not Slopped","Chopped and Screwed","Southern Hip Hop","Syrup Nation","Codeine Music"],
-  "audio":{"@type":"AudioObject","encodingFormat":"audio/mpeg"},
-  "offers":{
-    "@type":"Offer",
-    "price":"3.99",
-    "priceCurrency":"USD",
-    "availability":"https://schema.org/InStock",
-    "url":"https://choppednotslopped.gumroad.com/l/bfwjeq"
-  },
-  "areaServed":["Atlanta, GA","Houston, TX","Dallas, TX","Memphis, TN","New Orleans, LA","Southern United States"]
+  "genre":["Hip Hop","Chopped Not Slopped","Chopped and Screwed","Southern Hip Hop","DJ-ready music","Syrup Nation","Codeine Music","Atlanta Underground"],
+  "image":"https://raw.githubusercontent.com/RocBoi/rocboiquez/23d2e568c5260de5d61776da0bb1e0047751f1e2/IMG_0384.jpeg",
+  "audio":{"@type":"AudioObject","encodingFormat":"audio/mpeg","contentUrl":"https://raw.githubusercontent.com/RocBoi/rocboiquez/4d352f948618b215e0215bc877047da805caee63/GetOutYourFeelings_30sec_Snippet_045-115.mp3"},
+  "offers":{"@type":"Offer","price":"3.99","priceCurrency":"USD","availability":"https://schema.org/InStock"},
+  "url":"https://www.rocboiquez.com"
 }
 </script>
 

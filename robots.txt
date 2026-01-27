@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Allow: /index.html
+Allow: /*.mp3$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+
+Crawl-delay: 5
+
+Sitemap: https://www.rocboiquez.com/sitemap.xml

@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="https://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- MAIN LANDING PAGE -->
   <url>
     <loc>https://www.rocboiquez.com/</loc>
-    <priority>1.0</priority>
+    <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+
+    <image:image>
+      <image:loc>
+        https://raw.githubusercontent.com/RocBoi/rocboiquez/23d2e568c5260de5d61776da0bb1e0047751f1e2/IMG_0384.jpeg
+      </image:loc>
+      <image:title>RocBoi Quez – Chopped Not Slopped Hip Hop</image:title>
+    </image:image>
   </url>
+
+  <!-- AUDIO ASSET (YES, THIS MATTERS) -->
+  <url>
+    <loc>
+      https://raw.githubusercontent.com/RocBoi/rocboiquez/4d352f948618b215e0215bc877047da805caee63/GetOutYourFeelings_30sec_Snippet_045-115.mp3
+    </loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
 </urlset>

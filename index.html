@@ -139,30 +139,37 @@
   });
 </script>
 
-<!-- SCHEMA -->
+<!-- SCHEMA: Combined MusicRecording + Person with Audio Preview -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"MusicRecording",
   "name":"Get Out Your Feelings (Chopped Not Slopped)",
-  "byArtist":{"@type":"Person","name":"RocBoi Quez"},
+  "byArtist":{
+    "@type":"Person",
+    "name":"RocBoi Quez",
+    "jobTitle":"Hip Hop Recording Artist",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Atlanta",
+      "addressRegion":"GA",
+      "addressCountry":"US"
+    }
+  },
   "genre":["Hip Hop","Chopped Not Slopped","Southern Hip Hop"],
-  "offers":{"@type":"Offer","price":"3.99","priceCurrency":"USD","availability":"https://schema.org/InStock"},
-  "url":"https://www.rocboiquez.com"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "name":"RocBoi Quez",
-  "jobTitle":"Hip Hop Recording Artist",
-  "address":{
-    "@type":"PostalAddress",
-    "addressLocality":"Atlanta",
-    "addressRegion":"GA",
-    "addressCountry":"US"
+  "offers":{
+    "@type":"Offer",
+    "price":"3.99",
+    "priceCurrency":"USD",
+    "availability":"https://schema.org/InStock"
+  },
+  "url":"https://www.rocboiquez.com",
+  "hasPart":{
+    "@type":"AudioObject",
+    "name":"Get Out Your Feelings Preview",
+    "duration":"PT30S",
+    "encodingFormat":"audio/mpeg",
+    "url":"https://raw.githubusercontent.com/RocBoi/rocboiquez/4d352f948618b215e0215bc877047da805caee63/GetOutYourFeelings_30sec_Snippet_045-115.mp3"
   }
 }
 </script>

@@ -52,10 +52,52 @@
     .price{font-size:1.4rem;font-weight:700;margin:15px 0}
     .badge{display:inline-block;padding:6px 12px;font-size:.75rem;border:1px solid #3a3a3a;border-radius:20px;color:#bdbdbd;margin-bottom:15px}
     footer{text-align:center;font-size:.85rem;opacity:.6;padding:24px;border-top:1px solid rgba(255,255,255,.06)}
+
+    /* SOCIAL BUTTONS TOP RIGHT */
+    .social-buttons {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 12px;
+      z-index: 999;
+    }
+    .social-buttons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    .social-buttons a:hover {
+      background: #b68cff;
+      transform: scale(1.1);
+    }
+    .social-buttons img {
+      width: 20px;
+      height: 20px;
+      filter: invert(1);
+    }
   </style>
 </head>
 
 <body>
+
+<!-- SOCIAL FOLLOW BUTTONS -->
+<div class="social-buttons">
+  <a href="https://www.instagram.com/atlquez_" target="_blank" title="Follow @atlquez_ on Instagram">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
+  </a>
+  <a href="https://www.facebook.com/rocboiquez" target="_blank" title="Follow @rocboiquez on Facebook">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook">
+  </a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -123,22 +165,6 @@
   </div>
 </section>
 
-  <!-- NEW ARTICLE ALERT -->
-<div style="position:fixed;bottom:80px;left:20px;background:#6a0dad;color:#fff;padding:12px 18px;border-radius:6px;z-index:9999;font-weight:700;animation:flash 1s infinite alternate;cursor:pointer;">
-  <a href="/direct-2-customer-vs-digital-streaming.html" style="color:#fff;text-decoration:none;">
-    🚨 New Article: Direct-to-Customer vs Digital Streaming
-  </a>
-</div>
-
-<style>
-  @keyframes flash {
-    0% { opacity:1; }
-    50% { opacity:0.5; }
-    100% { opacity:1; }
-  }
-</style>
-
-<footer>© 2026 RocBoi Quez • Underground Atlanta Hip-Hop</footer>
 <footer>© 2026 RocBoi Quez • Underground Atlanta Hip-Hop</footer>
 
 <!-- WAVEFORM -->
@@ -191,4 +217,4 @@
 </script>
 
 </body>
-      </html>
+    </html>

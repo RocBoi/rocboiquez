@@ -12,6 +12,14 @@
   <meta name="author" content="RocBoi Quez">
   <link rel="canonical" href="https://www.rocboiquez.com/">
 
+  <!-- ARTICLE META (ADDITIVE) -->
+  <meta property="article:author" content="RocBoi Quez">
+  <meta property="article:publisher" content="RocBoi Quez">
+  <meta property="article:section" content="Hip Hop Editorial">
+  <meta property="article:tag" content="Chopped Not Slopped">
+  <meta property="article:tag" content="DJ Hip Hop">
+  <meta property="article:tag" content="Atlanta Hip Hop">
+
   <!-- PERFORMANCE -->
   <link rel="preload" as="image" href="https://raw.githubusercontent.com/RocBoi/rocboiquez/f683d1e0822086e630009f564e0725a19f7187eb/unnamed.webp">
 
@@ -52,22 +60,13 @@
     .price{font-size:1.4rem;font-weight:700;margin:15px 0}
     .badge{display:inline-block;padding:6px 12px;font-size:.75rem;border:1px solid #3a3a3a;border-radius:20px;color:#bdbdbd;margin-bottom:15px}
     footer{text-align:center;font-size:.85rem;opacity:.6;padding:24px;border-top:1px solid rgba(255,255,255,.06)}
-    .social-buttons{position:fixed;top:20px;right:20px;display:flex;gap:12px;z-index:10}
-    .social-buttons a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;background:#fff;color:#000;border-radius:50%;text-decoration:none;font-weight:700;font-size:18px;transition:.2s}
-    .social-buttons a:hover{opacity:.8}
-    .follower-count{text-align:center;margin:30px 0;font-size:1rem;opacity:.8}
-    .editorial-link a{color:#b68cff;text-decoration:none;font-weight:600}
-    .editorial-link a:hover{text-decoration:underline}
   </style>
 </head>
 
 <body>
 
-<!-- SOCIAL ICONS -->
-<div class="social-buttons">
-  <a href="https://instagram.com/atlquez_" target="_blank" title="Follow on Instagram">IG</a>
-  <a href="https://facebook.com/rocboiquezworld" target="_blank" title="Follow on Facebook">FB</a>
-</div>
+<!-- PREFETCH D2C (CRAWL PRIORITY, INVISIBLE) -->
+<link rel="prefetch" href="/d2c.html">
 
 <!-- HERO -->
 <section class="hero">
@@ -80,7 +79,7 @@
 <!-- RELEASE CARD -->
 <section>
   <div class="card">
-    <span class="badge">Exclusive • DJ Ready • Direct-to-Fan</span>
+    <span class="badge">Exclusive • DJ Ready</span>
 
     <h2>Get Out Your Feelings</h2>
     <h3>Chopped Not Slopped</h3>
@@ -91,9 +90,9 @@
       who value real Southern sound and mix control.
     </p>
 
-    <!-- AUDIO -->
     <audio id="audio-player" controls preload="none">
       <source src="https://raw.githubusercontent.com/RocBoi/rocboiquez/4d352f948618b215e0215bc877047da805caee63/GetOutYourFeelings_30sec_Snippet_045-115.mp3" type="audio/mpeg">
+      Your browser does not support audio playback.
     </audio>
 
     <div id="waveform"></div>
@@ -106,42 +105,28 @@
 
     <p class="price">$3.99</p>
 
-    <p style="font-size:.9rem;opacity:.8">
-      Instant download • Clean DJ intro • Official artist release
-    </p>
-
     <a href="https://choppednotslopped.gumroad.com/l/bfwjeq" target="_blank" class="btn btn-primary" id="buyBtn">
       Buy Now
     </a>
 
-    <a href="mailto:bookings@rocboiquez.com" class="btn btn-secondary">
-      DJs: Get Drops & Clean Intros
+    <a href="/d2c.html" class="btn btn-secondary">
+      Read the DJ Editorial
     </a>
-
-    <!-- EDITORIAL LINKS -->
-<hr style="margin:30px 0;border:none;border-top:1px solid rgba(255,255,255,.08)">
-<p class="editorial-link" style="font-size:.9rem;opacity:.85">
-  <strong>Editorial Insight:</strong><br>
-  Why DJs, college radio, and underground tastemakers are returning to
-  <a href="/editorial/why-djs-are-returning-to-chopped-not-slopped.html">
-    chopped not slopped hip-hop in 2026
-  </a>.<br>
-  Read also:
-  <a href="/rocboiquez/direct-2-customer-vs-digital-streaming.html">
-    Direct-to-Customer vs Digital Streaming
-  </a>.
-</p>
   </div>
 </section>
 
-<!-- FOLLOWER COUNT -->
-<div class="follower-count">
-  <strong>Follower Count (IG + FB):</strong> 124,000
-</div>
+<!-- EDITORIAL SEMANTIC SIGNAL -->
+<article id="editorial-context" style="display:none">
+  <h2>Why DJs Are Tapping Back Into Chopped</h2>
+  <p>
+    Underground DJs are reclaiming chopped not slopped hip-hop for rotation,
+    live sets, and independent radio programming.
+    <a href="/" title="RocBoi Quez official release page">RocBoi Quez official release page</a>
+  </p>
+</article>
 
 <footer>© 2026 RocBoi Quez • Underground Atlanta Hip-Hop</footer>
 
-<!-- WAVEFORM -->
 <script src="https://unpkg.com/wavesurfer.js@7"></script>
 <script>
   WaveSurfer.create({
@@ -155,44 +140,30 @@
   });
 </script>
 
-<!-- SCHEMA -->
+<!-- MUSIC SCHEMA -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@graph":[
-    {
-      "@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.rocboiquez.com"},
-        {"@type":"ListItem","position":2,"name":"Chopped Not Slopped","item":"https://www.rocboiquez.com"}
-      ]
-    },
-    {
-      "@type":"MusicRecording",
-      "name":"Get Out Your Feelings (Chopped Not Slopped)",
-      "byArtist":{"@type":"Person","name":"RocBoi Quez"},
-      "genre":["Hip Hop","Chopped Not Slopped","Southern Hip Hop"],
-      "offers":{"@type":"Offer","price":"3.99","priceCurrency":"USD","availability":"https://schema.org/InStock"},
-      "url":"https://www.rocboiquez.com",
-      "hasPart":{
-        "@type":"AudioObject",
-        "name":"Get Out Your Feelings Preview",
-        "duration":"PT30S",
-        "encodingFormat":"audio/mpeg",
-        "url":"https://raw.githubusercontent.com/RocBoi/rocboiquez/4d352f948618b215e0215bc877047da805caee63/GetOutYourFeelings_30sec_Snippet_045-115.mp3"
-      }
-    },
-    {
-      "@type":"Article",
-      "headline":"Direct-to-Customer vs Digital Streaming",
-      "author":{"@type":"Person","name":"RocBoi Quez"},
-      "url":"https://github.com/RocBoi/rocboiquez/blob/4fe6a089b13d32ba3f244641d251f2ce14a03400/direct-2-customer-vs-digital-streaming.html",
-      "datePublished":"2026-01-27",
-      "publisher":{"@type":"Organization","name":"RocBoi Quez Official","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/RocBoi/rocboiquez/f683d1e0822086e630009f564e0725a19f7187eb/unnamed.webp"}}
-    }
-  ]
+  "@type":"MusicRecording",
+  "name":"Get Out Your Feelings (Chopped Not Slopped)",
+  "byArtist":{"@type":"Person","name":"RocBoi Quez"},
+  "genre":["Hip Hop","Chopped Not Slopped","Southern Hip Hop"],
+  "offers":{"@type":"Offer","price":"3.99","priceCurrency":"USD","availability":"https://schema.org/InStock"},
+  "url":"https://www.rocboiquez.com"
+}
+</script>
+
+<!-- ARTICLE SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Why DJs Are Tapping Back Into Chopped",
+  "author":{"@type":"Person","name":"RocBoi Quez"},
+  "publisher":{"@type":"Organization","name":"RocBoi Quez"},
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://www.rocboiquez.com"}
 }
 </script>
 
 </body>
-  </html>
+</html>

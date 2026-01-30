@@ -39,25 +39,6 @@
   });
 </script>
 
-  <script>
-document.getElementById('audio-player')?.addEventListener('play', function () {
-  gtag('event', 'audio_play', {
-    event_category: 'engagement',
-    event_label: 'Get Out Your Feelings Preview'
-  });
-});
-  </script>
-
-  <script>
-document.getElementById('buyBtn')?.addEventListener('click', function () {
-  gtag('event', 'purchase_click', {
-    event_category: 'conversion',
-    event_label: 'Get Out Your Feelings $3.99'
-  });
-});
-  </script>
-
-  
   
 </head>
 
@@ -140,6 +121,23 @@ document.getElementById('buyBtn')?.addEventListener('click', function () {
   },
   "url": "https://www.rocboiquez.com/"
 }
+</script>
+  <script>
+document.getElementById('audio-player')?.addEventListener('play', function () {
+  gtag('event', 'audio_play', {
+    event_category: 'engagement',
+    event_label: 'Get Out Your Feelings Preview'
+  });
+});
+</script>
+
+<script>
+document.getElementById('buyBtn')?.addEventListener('click', function () {
+  gtag('event', 'purchase_click', {
+    event_category: 'conversion',
+    event_label: 'Get Out Your Feelings $3.99'
+  });
+});
 </script>
 
 </body>

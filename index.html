@@ -26,6 +26,39 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA4-521370462"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'GA4-521370462', {
+    send_page_view: true
+  });
+</script>
+
+  <script>
+document.getElementById('audio-player')?.addEventListener('play', function () {
+  gtag('event', 'audio_play', {
+    event_category: 'engagement',
+    event_label: 'Get Out Your Feelings Preview'
+  });
+});
+  </script>
+
+  <script>
+document.getElementById('buyBtn')?.addEventListener('click', function () {
+  gtag('event', 'purchase_click', {
+    event_category: 'conversion',
+    event_label: 'Get Out Your Feelings $3.99'
+  });
+});
+  </script>
+
+  
+  
 </head>
 
 <body>

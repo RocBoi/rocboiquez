@@ -28,5 +28,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
+  
+  <url>
+  <loc>https://www.rocboiquez.com/VipAccessPublishing.html</loc>
+  <priority>0.85</priority>
+</url>
 
 </urlset>

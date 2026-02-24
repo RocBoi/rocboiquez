@@ -127,6 +127,51 @@ a.btn:hover{
   letter-spacing:2px;
   margin-bottom:25px;
 }
+
+/* RocWorld Email Subscription */
+.rocworld-form {
+  margin:60px auto;
+  max-width:500px;
+  background:#111;
+  padding:40px 20px;
+  border:1px solid #ffcc00;
+  border-radius:12px;
+  text-align:center;
+}
+.rocworld-form h2 {
+  font-size:28px;
+  margin-bottom:20px;
+  letter-spacing:2px;
+}
+.rocworld-form input[type="email"] {
+  width:80%;
+  padding:14px;
+  margin-bottom:20px;
+  border-radius:8px;
+  border:1px solid #ffcc00;
+  background:#000;
+  color:#fff;
+  font-size:16px;
+}
+.rocworld-form input[type="submit"] {
+  padding:14px 36px;
+  background:linear-gradient(45deg,#ffcc00,#ff6600);
+  border:none;
+  border-radius:8px;
+  font-weight:900;
+  color:#000;
+  cursor:pointer;
+  transition:0.3s;
+}
+.rocworld-form input[type="submit"]:hover {
+  transform:scale(1.07);
+  box-shadow:0 0 20px rgba(255,204,0,0.6);
+}
+.rocworld-note {
+  font-size:14px;
+  color:#aaa;
+  margin-top:12px;
+}
 </style>
 
 </head>
@@ -216,6 +261,47 @@ a.btn:hover{
      READ FULL ARTICLE
   </a>
 </section>
+
+<!-- ROCWORLD EMAIL SUBSCRIPTION -->
+<section>
+  <div class="rocworld-form">
+    <h2>Join RocWorld</h2>
+    <p>Subscribe for exclusive updates, streams, merch drops, and behind-the-scenes content.</p>
+    <form id="rocworldForm" action="https://formspree.io/f/xdalljwe" method="POST">
+      <input type="email" name="email" placeholder="Your Email Address" required>
+      <br>
+      <input type="submit" value="JOIN NOW" onclick="gtag('event','sign_up',{'event_category':'RocWorld','event_label':'Email Signup'});">
+    </form>
+    <p id="rocworldMessage" class="rocworld-note"></p>
+    <p class="rocworld-note">We respect your privacy. No spam, ever.</p>
+  </div>
+</section>
+
+<script>
+const form = document.getElementById('rocworldForm');
+const message = document.getElementById('rocworldMessage');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const data = new FormData(form);
+  const xhr = new XMLHttpRequest();
+  xhr.open(form.method, form.action);
+  xhr.setRequestHeader('Accept', 'application/json');
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      message.style.color = '#ffcc00';
+      message.textContent = "🔥 Thanks for joining RocWorld! Check your inbox for updates.";
+      form.reset();
+    } else {
+      message.style.color = '#ff3300';
+      message.textContent = "⚠️ Something went wrong. Please try again.";
+    }
+  };
+  xhr.send(data);
+});
+</script>
 
 <footer style="padding:50px 20px;font-size:14px;color:#888;">
 © 2026 RocBoi Quez | Bentley Records | All Rights Reserved

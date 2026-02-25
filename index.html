@@ -57,7 +57,6 @@ gtag('config', 'G-5XB388TCWK');
 </script>
 
 <style>
-/* ALL YOUR ORIGINAL STYLES FULLY PRESERVED */
 body{
   margin:0;
   font-family:Arial, sans-serif;
@@ -128,8 +127,6 @@ a.btn:hover{
   letter-spacing:2px;
   margin-bottom:25px;
 }
-
-/* RocWorld Email Subscription */
 .rocworld-form {
   margin:60px auto;
   max-width:500px;
@@ -138,11 +135,6 @@ a.btn:hover{
   border:1px solid #ffcc00;
   border-radius:12px;
   text-align:center;
-}
-.rocworld-form h2 {
-  font-size:28px;
-  margin-bottom:20px;
-  letter-spacing:2px;
 }
 .rocworld-form input[type="email"] {
   width:80%;
@@ -162,11 +154,6 @@ a.btn:hover{
   font-weight:900;
   color:#000;
   cursor:pointer;
-  transition:0.3s;
-}
-.rocworld-form input[type="submit"]:hover {
-  transform:scale(1.07);
-  box-shadow:0 0 20px rgba(255,204,0,0.6);
 }
 .rocworld-note {
   font-size:14px;
@@ -174,10 +161,10 @@ a.btn:hover{
   margin-top:12px;
 }
 </style>
+
 </head>
 <body>
 
-<!-- BILLBOARD -->
 <div class="billboard">
 🔥 OUT NOW • STREAM GET OUT YOUR FEELINGS • BENTLEY RECORDS RELEASE • ATLANTA HIP HOP 🔥
 </div>
@@ -192,8 +179,7 @@ a.btn:hover{
   <p>Now streaming worldwide under Bentley Records.</p>
   <a href="https://found.ee/rocboiquez_getoutyourfeelingschoppednotslopped"
      target="_blank"
-     class="btn"
-     onclick="gtag('event','click',{'event_category':'Streaming','event_label':'GOYF Stream Click'});">
+     class="btn">
      ▶ STREAM NOW
   </a>
 </section>
@@ -201,67 +187,55 @@ a.btn:hover{
 <!-- SOCIAL -->
 <section>
   <h2>Follow RocBoi Quez</h2>
-  <!-- (social icons unchanged) -->
-</section>
-
-<!-- BENTLEY RECORDS FEATURE -->
-<section style="background:#0f0f0f;">
-  <div class="label-badge">OFFICIAL LABEL FEATURE</div>
-  <h2>Featured on Bentley Records</h2>
-  <p>RocBoi Quez is officially featured on the Bentley Records international platform. View the complete Electronic Press Kit including biography, credentials, and global distribution profile.</p>
-  <a href="https://bentleyrecords.io/artist/rocboi-quez"
-     target="_blank"
-     class="btn">
-     VIEW OFFICIAL EPK
-  </a>
-</section>
-
-<!-- DIGITAL ASSETS / NFT DROP (UPDATED ONLY CONTENT) -->
-<section id="digital-assets" style="padding: 60px 20px; background-color:#111; color:#fff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-  <div style="max-width:900px; margin:0 auto; text-align:center;">
-    <h2 style="font-size:2.5rem; font-weight:700; margin-bottom:20px; color:#f0c040;">Digital Assets & Ownership</h2>
-
-    <p style="font-size:1.1rem; line-height:1.8; margin-bottom:20px; color:#ccc;">
-      <strong>THE DIFFERENCE – Chopped N Screwed NFT</strong><br>
-      Limited Edition Available
-    </p>
-
-    <p style="font-size:1rem; line-height:1.8; margin-bottom:30px; color:#aaa;">
-      “The Difference (Chopped N Screwed)” NFT is a limited-edition digital collectible capturing the slowed,
-      Houston-inspired chopped & screwed variation of the record. This on-chain release secures
-      blockchain-verified provenance on Base and allows collectors to purchase, own, and trade
-      a permanent digital asset representing a culturally authentic remix edition
-      within the RocBoi Quez Web3 catalog.
-    </p>
-
-    <a href="https://opensea.io/item/base/0x1342200d993e4f8a8eb3c1f206c43d608eb91d35/246"
-       target="_blank"
-       class="btn">
-       COLLECT LIMITED EDITION
-    </a>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/atlquez_" target="_blank">Instagram</a>
+    <a href="https://x.com/marquez_ro2084?s=21" target="_blank">X</a>
+    <a href="https://www.facebook.com/share/181wsX6CWD/?mibextid=wwXIfr" target="_blank">Facebook</a>
   </div>
 </section>
 
-<!-- VIP ACCESS -->
-<section>
-  <div class="label-badge">PUBLISHING ANNOUNCEMENT</div>
-  <h2>VIP Access Publishing Deal</h2>
-  <p>On July 15, 2025, RocBoi Quez secured a non-exclusive publishing agreement expanding independent rights administration, sync licensing eligibility, and NFT collaboration strategy.</p>
-  <a href="VipAccessPublishing.html" class="btn">
-     READ FULL ARTICLE
+<!-- DIGITAL ASSETS UPDATED ONLY -->
+<section id="digital-assets" style="padding: 60px 20px; background-color:#111; color:#fff;">
+  <h2 style="color:#ffcc00;">Digital Assets & Ownership</h2>
+
+  <p>
+    <strong>THE DIFFERENCE – Chopped N Screwed NFT</strong><br>
+    Limited Edition Available
+  </p>
+
+  <p>
+    “The Difference (Chopped N Screwed)” NFT is a limited-edition digital collectible capturing the slowed,
+    Houston-inspired chopped & screwed variation of the record. This on-chain release secures
+    blockchain-verified provenance on Base and allows collectors to purchase, own, and trade
+    a permanent digital asset representing a culturally authentic remix edition
+    within the RocBoi Quez Web3 catalog.
+  </p>
+
+  <a href="https://opensea.io/item/base/0x1342200d993e4f8a8eb3c1f206c43d608eb91d35/246"
+     target="_blank"
+     class="btn">
+     COLLECT LIMITED EDITION
   </a>
 </section>
 
-<!-- ROCWORLD EMAIL SUBSCRIPTION -->
+<!-- ROCWORLD SUBSCRIPTION -->
 <section>
-  <!-- FULL FORM UNCHANGED -->
+  <div class="rocworld-form">
+    <h2>Join RocWorld</h2>
+    <p>Subscribe for exclusive updates, streams, merch drops, and behind-the-scenes content.</p>
+    <form action="https://formspree.io/f/xdalljwe" method="POST">
+      <input type="email" name="email" placeholder="Your Email Address" required>
+      <br>
+      <input type="submit" value="JOIN NOW">
+    </form>
+    <p class="rocworld-note">We respect your privacy. No spam, ever.</p>
+  </div>
 </section>
 
 <footer style="padding:50px 20px;font-size:14px;color:#888;">
 © 2026 RocBoi Quez | Bentley Records | All Rights Reserved
 </footer>
 
-<!-- NFT STRUCTURED DATA -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -271,8 +245,7 @@ a.btn:hover{
     "@type": "Person",
     "name": "RocBoi Quez"
   },
-  "url": "https://opensea.io/item/base/0x1342200d993e4f8a8eb3c1f206c43d608eb91d35/246",
-  "description": "Limited edition blockchain-verified NFT of The Difference (Chopped N Screwed) by RocBoi Quez deployed on Base and available via OpenSea."
+  "url": "https://opensea.io/item/base/0x1342200d993e4f8a8eb3c1f206c43d608eb91d35/246"
 }
 </script>
 

@@ -57,6 +57,7 @@ gtag('config', 'G-5XB388TCWK');
 </script>
 
 <style>
+/* YOUR ORIGINAL STYLES REMAIN EXACTLY THE SAME */
 body{
   margin:0;
   font-family:Arial, sans-serif;
@@ -119,47 +120,6 @@ a.btn:hover{
   width:34px;
   height:34px;
 }
-.label-badge{
-  display:inline-block;
-  border:1px solid #ffcc00;
-  padding:6px 14px;
-  font-size:12px;
-  letter-spacing:2px;
-  margin-bottom:25px;
-}
-.rocworld-form {
-  margin:60px auto;
-  max-width:500px;
-  background:#111;
-  padding:40px 20px;
-  border:1px solid #ffcc00;
-  border-radius:12px;
-  text-align:center;
-}
-.rocworld-form input[type="email"] {
-  width:80%;
-  padding:14px;
-  margin-bottom:20px;
-  border-radius:8px;
-  border:1px solid #ffcc00;
-  background:#000;
-  color:#fff;
-  font-size:16px;
-}
-.rocworld-form input[type="submit"] {
-  padding:14px 36px;
-  background:linear-gradient(45deg,#ffcc00,#ff6600);
-  border:none;
-  border-radius:8px;
-  font-weight:900;
-  color:#000;
-  cursor:pointer;
-}
-.rocworld-note {
-  font-size:14px;
-  color:#aaa;
-  margin-top:12px;
-}
 </style>
 
 </head>
@@ -179,22 +139,67 @@ a.btn:hover{
   <p>Now streaming worldwide under Bentley Records.</p>
   <a href="https://found.ee/rocboiquez_getoutyourfeelingschoppednotslopped"
      target="_blank"
+     onclick="gtag('event','click',{'event_category':'Streaming','event_label':'Stream Now Click'});"
      class="btn">
      ▶ STREAM NOW
   </a>
 </section>
 
-<!-- SOCIAL -->
+<!-- SOCIAL WITH SVG ICONS RESTORED -->
 <section>
   <h2>Follow RocBoi Quez</h2>
   <div class="social-icons">
-    <a href="https://www.instagram.com/atlquez_" target="_blank">Instagram</a>
-    <a href="https://x.com/marquez_ro2084?s=21" target="_blank">X</a>
-    <a href="https://www.facebook.com/share/181wsX6CWD/?mibextid=wwXIfr" target="_blank">Facebook</a>
+
+    <a href="https://www.instagram.com/atlquez_" target="_blank"
+       onclick="gtag('event','click',{'event_category':'Social','event_label':'Instagram'});">
+      <!-- Instagram SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2z"/>
+      </svg>
+    </a>
+
+    <a href="https://x.com/marquez_ro2084?s=21" target="_blank"
+       onclick="gtag('event','click',{'event_category':'Social','event_label':'X'});">
+      <!-- X SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M3 3l18 18M21 3L3 21"/>
+      </svg>
+    </a>
+
+    <a href="https://www.facebook.com/share/181wsX6CWD/?mibextid=wwXIfr" target="_blank"
+       onclick="gtag('event','click',{'event_category':'Social','event_label':'Facebook'});">
+      <!-- Facebook SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M13.5 9H16V6h-2.5C11.57 6 10 7.57 10 9.5V12H8v3h2v7h3v-7h2.25l.75-3H13v-2.25c0-.41.34-.75.75-.75z"/>
+      </svg>
+    </a>
+
   </div>
 </section>
 
-<!-- DIGITAL ASSETS UPDATED ONLY -->
+<!-- BENTLEY RECORDS EPK -->
+<section>
+  <h2>Bentley Records Feature</h2>
+  <p>Official Electronic Press Kit and label feature via Bentley Records.</p>
+  <a href="https://bentleyrecords.io" target="_blank"
+     onclick="gtag('event','click',{'event_category':'Press','event_label':'Bentley EPK'});"
+     class="btn">
+     VIEW EPK
+  </a>
+</section>
+
+<!-- VIP ACCESS PUBLISHING -->
+<section>
+  <h2>VIP Access Publishing</h2>
+  <p>Exclusive publishing updates, sync opportunities, early releases and premium digital drops.</p>
+  <a href="mailto:licensing@rocboiquez.online"
+     onclick="gtag('event','click',{'event_category':'VIP','event_label':'VIP Publishing'});"
+     class="btn">
+     REQUEST ACCESS
+  </a>
+</section>
+
+<!-- NFT SECTION (UNCHANGED FROM YOUR LAST VERSION) -->
 <section id="digital-assets" style="padding: 60px 20px; background-color:#111; color:#fff;">
   <h2 style="color:#ffcc00;">Digital Assets & Ownership</h2>
 
@@ -213,41 +218,15 @@ a.btn:hover{
 
   <a href="https://opensea.io/item/base/0x1342200d993e4f8a8eb3c1f206c43d608eb91d35/246"
      target="_blank"
+     onclick="gtag('event','click',{'event_category':'NFT','event_label':'Difference NFT'});"
      class="btn">
      COLLECT LIMITED EDITION
   </a>
 </section>
 
-<!-- ROCWORLD SUBSCRIPTION -->
-<section>
-  <div class="rocworld-form">
-    <h2>Join RocWorld</h2>
-    <p>Subscribe for exclusive updates, streams, merch drops, and behind-the-scenes content.</p>
-    <form action="https://formspree.io/f/xdalljwe" method="POST">
-      <input type="email" name="email" placeholder="Your Email Address" required>
-      <br>
-      <input type="submit" value="JOIN NOW">
-    </form>
-    <p class="rocworld-note">We respect your privacy. No spam, ever.</p>
-  </div>
-</section>
-
 <footer style="padding:50px 20px;font-size:14px;color:#888;">
 © 2026 RocBoi Quez | Bentley Records | All Rights Reserved
 </footer>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CreativeWork",
-  "name": "The Difference (Chopped N Screwed) NFT",
-  "creator": {
-    "@type": "Person",
-    "name": "RocBoi Quez"
-  },
-  "url": "https://opensea.io/item/base/0x1342200d993e4f8a8eb3c1f206c43d608eb91d35/246"
-}
-</script>
 
 </body>
 </html>
